@@ -1,0 +1,6 @@
+# Local preview tooling and design-review scratch files
+.claude/
+.impeccable/review/
+.impeccable/decision/
+.vercel/
+.impeccable/questions/

@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>«Арбуз» — продукты с доставкой по Джалгану</title>
+<meta name="description" content="Магазин продуктов «Арбуз» в селе Джалган, Дагестанская ул., 12. Продукты, напитки, сладости и товары для дома с доставкой по Джалгану. Заказ в WhatsApp. Работаем с 9:00 до 22:00.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="«Арбуз» — продукты с доставкой по Джалгану">
+<meta property="og:description" content="Пришлите список в WhatsApp — соберём и привезём. Дагестанская ул., 12. Работаем с 9:00 до 22:00.">
+<meta property="og:image" content="img/storefront-night-l.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%2312873c'/%3E%3Cpath d='M6.5 16h35a17.5 17.5 0 0 1-35 0z' fill='%239fd68a'/%3E%3Cpath d='M8.5 16h31a15.5 15.5 0 0 1-31 0z' fill='%23fff'/%3E%3Cpath d='M10.5 16h27a13.5 13.5 0 0 1-27 0z' fill='%23e8333b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/storefront-night-l.jpg" imagesrcset="img/storefront-night-s.jpg 800w, img/storefront-night-l.jpg 1600w" imagesizes="(max-width: 980px) 100vw, 640px">
+<style>
+:root {
+  --bg: #ffffff;
+  --surface: #f3f5f1;
+  --surface-2: #e8ece4;
+  --line: #dfe5da;
+  --ink: #17201a;
+  --ink-2: #4a554c;
+  --ink-3: #636c64;
+  --red: #e8333b;
+  --red-ink: #d12a32;
+  --red-band: #d6303a;
+  --red-soft: #fdeceb;
+  --green: #12873c;
+  --green-hover: #0e7433;
+  --green-deep: #0b5c2a;
+  --green-soft: #e4f3e7;
+  --rind-light: #9fd68a;
+  --star: #f2a20c;
+  --gutter: clamp(16px, 4vw, 40px);
+  --r-xl: 32px;
+  --r-lg: 24px;
+  --r-md: 18px;
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  --shadow-sm: 0 6px 16px -8px rgba(23, 32, 26, .30);
+  --shadow: 0 22px 44px -22px rgba(23, 32, 26, .38);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  caret-color: var(--green);
+  overflow-x: clip;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+button, input, textarea { font: inherit; color: inherit; }
+::selection { background: var(--red-soft); color: var(--red-ink); }
+:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; border-radius: 10px; }
+section[id] { scroll-margin-top: 88px; }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+.wrap { width: min(100% - 2 * var(--gutter), 1280px); margin-inline: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 16px; top: -60px; z-index: 100; background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 12px; text-decoration: none; transition: top .2s; }
+.skip:focus { top: 12px; }
+.red { color: var(--red-ink); }
+.nowrap { white-space: nowrap; }
+
+.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.i-fill { fill: currentColor; stroke: none; }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 52px; padding: 0 24px; border: 0; border-radius: 999px;
+  font-weight: 600; font-size: 17px; line-height: 1.2; text-decoration: none; cursor: pointer;
+  transition: background-color .2s, color .2s, box-shadow .3s var(--ease), transform .3s var(--ease);
+}
+.btn:active { transform: translateY(1px) scale(.99); }
+.btn-wa { background: var(--green); color: #fff; box-shadow: 0 10px 22px -12px rgba(18, 135, 60, .9); }
+.btn-wa:hover { background: var(--green-hover); box-shadow: 0 14px 26px -12px rgba(18, 135, 60, .95); }
+.btn-wa .i { width: 22px; height: 22px; }
+.btn-soft { background: var(--surface); color: var(--ink); }
+.btn-soft:hover { background: var(--surface-2); }
+.btn-white { background: #fff; color: var(--ink); box-shadow: 0 12px 26px -14px rgba(60, 0, 0, .55); }
+.btn-white:hover { background: #f7faf5; }
+.btn-white .i-wa { color: var(--green); }
+.btn-lg { min-height: 60px; padding: 0 30px; font-size: 18px; }
+.btn-block { width: 100%; }
+
+/* ---------- top bar & header ---------- */
+.topbar { background: var(--surface); color: var(--ink-2); font-size: 14px; }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 40px; }
+.topbar-group { display: flex; align-items: center; gap: 24px; }
+.topbar-item { display: inline-flex; align-items: center; gap: 8px; }
+.topbar-item .i { width: 17px; height: 17px; color: var(--green); }
+.topbar-item b { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+.header { position: sticky; top: 0; z-index: 50; background: #fff; transition: box-shadow .3s; }
+.header.is-scrolled { box-shadow: 0 1px 0 var(--line), 0 10px 24px -20px rgba(23, 32, 26, .5); }
+.header .wrap { display: flex; align-items: center; gap: 32px; height: 76px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; flex: none; }
+.brand-mark { width: 46px; height: 46px; }
+.brand-name { font-weight: 800; font-size: 27px; letter-spacing: -.035em; color: var(--red-ink); line-height: 1; }
+.brand-sub { display: block; margin-top: 4px; font-size: 13px; font-weight: 500; letter-spacing: 0; color: var(--ink-2); }
+.nav { display: flex; gap: 28px; margin-left: 8px; }
+.nav a { text-decoration: none; font-weight: 500; font-size: 16px; color: var(--ink-2); transition: color .2s; padding: 6px 0; }
+.nav a:hover { color: var(--green); }
+.header .btn { margin-left: auto; }
+
+/* ---------- hero ---------- */
+.hero { padding: clamp(28px, 4vw, 52px) 0 clamp(16px, 2.5vw, 36px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); gap: clamp(36px, 5vw, 76px); align-items: center; }
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(2.35rem, 1.25rem + 3.7vw, 4.4rem);
+  line-height: 1.02; letter-spacing: -.035em; font-weight: 700;
+}
+.lead { margin: 0 0 34px; max-width: 33em; font-size: clamp(1.06rem, 1rem + .35vw, 1.25rem); line-height: 1.55; color: var(--ink-2); }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.facts { list-style: none; margin: 40px 0 0; padding: 28px 0 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 18px 34px; }
+.fact { display: flex; align-items: center; gap: 12px; }
+.fact-ic { width: 44px; height: 44px; border-radius: 50%; background: var(--green-soft); color: var(--green); display: grid; place-items: center; flex: none; }
+.fact-ic.is-star { background: #fff3db; color: var(--star); }
+.fact b { display: block; font-weight: 600; font-size: 17px; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.fact span { display: block; font-size: 14px; color: var(--ink-2); line-height: 1.3; }
+.fact-link { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.fact-link:hover b { color: var(--green); }
+
+.collage { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; container-type: inline-size; }
+.ph { position: relative; overflow: hidden; background: var(--surface); }
+.ph img { width: 100%; height: 100%; object-fit: cover; }
+.c-main { grid-column: 1 / -1; aspect-ratio: 16 / 10; border-radius: var(--r-xl); }
+.c-main::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 58%, rgba(0,0,0,.62) 100%); }
+.c-cap { position: absolute; left: 140px; right: 22px; bottom: 18px; z-index: 1; color: #fff; font-size: 15px; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.c-cap .i { width: 18px; height: 18px; }
+.c-a, .c-b { aspect-ratio: 5 / 4; border-radius: var(--r-lg); }
+.c-a img { object-position: 50% 30%; }
+.c-b img { object-position: 50% 45%; }
+.sticker {
+  position: absolute; left: -30px; top: 50%; top: calc(62.5cqw - 62px); z-index: 2;
+  width: 138px; height: 138px; border-radius: 50%;
+  display: grid; place-items: center; text-align: center;
+  background: var(--red-ink); color: #fff;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 11px var(--rind-light), 0 0 0 17px var(--green-deep), 0 22px 30px -12px rgba(0,0,0,.4);
+  transform: rotate(-10deg);
+  transition: transform .5s var(--ease);
+}
+.sticker:hover { transform: rotate(-4deg) scale(1.03); }
+.sticker svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.sticker span { position: relative; font-weight: 700; font-size: 17px; line-height: 1.12; }
+
+/* ---------- section heads ---------- */
+.sec { padding-top: clamp(72px, 9vw, 128px); }
+.sec-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px 48px; margin-bottom: clamp(26px, 3vw, 40px); }
+.sec-head p { margin: 0; max-width: 42ch; color: var(--ink-2); }
+h2 { margin: 0; font-size: clamp(2rem, 1.35rem + 2.3vw, 3.3rem); line-height: 1.05; letter-spacing: -.032em; font-weight: 700; }
+
+/* ---------- catalog bento ---------- */
+.bento { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 214px; grid-auto-flow: dense; gap: 14px; }
+.tile {
+  position: relative; display: block; overflow: hidden; isolation: isolate;
+  border-radius: var(--r-lg); background: var(--surface); text-decoration: none; color: var(--ink);
+}
+.tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,.24)); pointer-events: none; }
+.tile:hover img { transform: scale(1.05); }
+.tile-label {
+  position: absolute; left: 12px; top: 12px; z-index: 2; max-width: calc(100% - 24px);
+  padding: 8px 14px; border-radius: 14px; background: #fff;
+  font-weight: 600; font-size: 16px; line-height: 1.25; box-shadow: var(--shadow-sm);
+}
+.tile-add {
+  position: absolute; right: 12px; bottom: 12px; z-index: 2;
+  width: 46px; height: 46px; border-radius: 50%; background: var(--green); color: #fff;
+  display: grid; place-items: center; box-shadow: 0 8px 18px -8px rgba(0,0,0,.45);
+  transition: transform .4s var(--ease), background-color .2s;
+}
+.tile-add .i { width: 22px; height: 22px; stroke-width: 2.2; }
+.tile:hover .tile-add { transform: scale(1.1); background: var(--green-hover); }
+.span-c2 { grid-column: span 2; }
+.span-r2 { grid-row: span 2; }
+.tile-text { padding: 22px; display: flex; flex-direction: column; justify-content: space-between; gap: 12px; }
+.tile-text::after { display: none; }
+.tile-text h3 { margin: 0; font-size: 22px; line-height: 1.15; letter-spacing: -.02em; font-weight: 700; }
+.tile-text p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+.tile-stationery p { font-size: clamp(1.05rem, .9rem + .5vw, 1.35rem); font-weight: 500; line-height: 1.3; color: var(--ink); max-width: 24em; }
+.tile-text .i { width: 34px; height: 34px; stroke-width: 1.6; }
+.tile-stationery { background: var(--red-soft); }
+.tile-stationery h3, .tile-stationery .i { color: var(--red-ink); }
+.tile-stationery cite { display: block; margin-top: 6px; font-style: normal; font-size: 13px; color: var(--ink-3); }
+.tile-missing { background: var(--green-soft); }
+.tile-missing h3 { color: var(--green-deep); }
+.tile-missing .go { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--green-deep); font-size: 15px; }
+.tile-missing:hover .go .i { transform: translateX(4px); }
+.tile-missing .go .i { width: 20px; height: 20px; transition: transform .3s var(--ease); }
+
+/* ---------- order builder ---------- */
+.order { margin-top: clamp(72px, 9vw, 128px); padding: clamp(64px, 8vw, 112px) 0; background: var(--surface); }
+.order-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(340px, 1fr); gap: 24px; align-items: start; }
+.picker { min-width: 0; background: #fff; border-radius: 28px; padding: clamp(20px, 2.4vw, 32px); }
+.pills { display: flex; gap: 8px; overflow-x: auto; -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent); mask-image: linear-gradient(90deg, #000 90%, transparent); padding: 2px 2px 8px; margin: -2px -2px 6px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.pills::-webkit-scrollbar { height: 6px; }
+.pills::-webkit-scrollbar-thumb { background: var(--line); border-radius: 6px; }
+.pill {
+  flex: none; min-height: 42px; padding: 0 18px; border-radius: 999px;
+  border: 1px solid var(--line); background: #fff; color: var(--ink-2);
+  font-weight: 500; font-size: 15px; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s;
+}
+.pill:hover { border-color: #c7d0c1; color: var(--ink); }
+.pill[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.group { margin-top: 26px; }
+.group[hidden] { display: none; }
+.group h3 { margin: 0 0 12px; display: flex; align-items: center; gap: 12px; font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
+.g-thumb { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--line); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px 0 12px;
+  border: 1px solid transparent; border-radius: 999px; background: var(--surface);
+  font-size: 15.5px; font-weight: 500; cursor: pointer;
+  transition: background-color .2s, border-color .2s, color .2s;
+}
+.chip:hover { background: var(--surface-2); }
+.chip .i { width: 18px; height: 18px; color: var(--green); stroke-width: 2.1; }
+.chip .qty { display: none; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: var(--green); color: #fff; font-size: 13px; font-weight: 600; place-items: center; font-variant-numeric: tabular-nums; }
+.chip.is-on { background: var(--green-soft); border-color: #b7dcc1; color: var(--green-deep); }
+.chip.is-on .qty { display: inline-grid; }
+.chip.bump { animation: bump .42s var(--ease); }
+@keyframes bump { 0% { transform: scale(.92); } 100% { transform: scale(1); } }
+.custom { display: flex; gap: 8px; margin-top: 30px; padding-top: 24px; border-top: 1px dashed #cfd8ca; }
+.custom label { display: block; }
+.field {
+  width: 100%; min-height: 52px; padding: 0 18px; border: 1.5px solid var(--line); border-radius: 16px; background: #fff;
+  transition: border-color .2s, box-shadow .2s;
+}
+textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-height: 1.45; }
+.field::placeholder { color: var(--ink-3); }
+.field:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 4px rgba(18, 135, 60, .14); }
+.custom .field { flex: 1; min-width: 0; }
+.custom .btn { flex: none; }
+
+.cart { position: sticky; top: 96px; background: #fff; border-radius: 28px; padding: clamp(20px, 2.2vw, 28px); box-shadow: var(--shadow); }
+.cart-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.cart-head h3 { margin: 0; display: flex; align-items: center; gap: 10px; font-size: 23px; font-weight: 700; letter-spacing: -.02em; }
+.count { min-width: 30px; padding: 3px 10px; border-radius: 999px; background: var(--red-ink); color: #fff; font-size: 14px; font-weight: 600; text-align: center; font-variant-numeric: tabular-nums; }
+.count.bump { animation: bump .42s var(--ease); }
+.clear { border: 0; background: none; padding: 6px 2px; font-size: 14px; color: var(--ink-2); text-decoration: underline; cursor: pointer; }
+.clear:hover { color: var(--red-ink); }
+.clear[hidden] { display: none; }
+.lines { list-style: none; margin: 14px 0 0; padding: 0; max-height: 312px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.line { display: flex; align-items: center; gap: 8px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.line.enter { animation: line-in .45s var(--ease); }
+@keyframes line-in { from { opacity: .2; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.line-name { flex: 1; min-width: 0; font-weight: 500; overflow-wrap: anywhere; }
+.stepper { display: inline-flex; align-items: center; background: var(--surface); border-radius: 999px; }
+.stepper button, .remove { width: 36px; height: 36px; border: 0; border-radius: 50%; background: none; display: grid; place-items: center; cursor: pointer; transition: background-color .2s, color .2s; }
+.stepper button:hover { background: var(--surface-2); }
+.stepper button .i, .remove .i { width: 18px; height: 18px; stroke-width: 2; }
+.stepper output { min-width: 22px; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+.remove { color: var(--ink-3); }
+.remove:hover { background: var(--red-soft); color: var(--red-ink); }
+.empty { display: flex; align-items: center; gap: 14px; margin-top: 16px; padding: 16px 18px; border-radius: var(--r-md); background: var(--surface); color: var(--ink-2); font-size: 15px; line-height: 1.45; }
+.empty svg { width: 44px; height: 44px; flex: none; }
+.empty[hidden] { display: none; }
+.cart-label { display: block; margin: 20px 0 8px; font-size: 14px; font-weight: 600; color: var(--ink-2); }
+.bubble {
+  margin: 0; padding: 13px 16px; border-radius: 18px 18px 6px 18px; background: #dcf5d6; color: #17301d;
+  font-size: 14.5px; line-height: 1.45; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 170px; overflow-y: auto;
+}
+.cart .btn-wa { margin-top: 18px; }
+.cart-note { margin: 12px 0 0; font-size: 14px; line-height: 1.45; color: var(--ink-2); text-align: center; }
+
+/* ---------- delivery ---------- */
+.how-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+.how-photo { aspect-ratio: 4 / 3.3; border-radius: var(--r-xl); }
+.steps { list-style: none; margin: 32px 0 0; padding: 0; counter-reset: step; }
+.step { position: relative; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 18px; padding-bottom: 30px; counter-increment: step; }
+.step:last-child { padding-bottom: 0; }
+.step::before {
+  content: counter(step); width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--green-soft); color: var(--green-deep);
+  font-weight: 700; font-size: 20px; font-variant-numeric: tabular-nums;
+}
+.step::after { content: ""; position: absolute; left: 25px; top: 60px; bottom: 8px; border-left: 2px dashed #bfdcc6; }
+.step:last-child::after { display: none; }
+.step h3 { margin: 10px 0 6px; font-size: 21px; line-height: 1.2; font-weight: 700; letter-spacing: -.015em; }
+.step p { margin: 0; color: var(--ink-2); }
+.terms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(40px, 5vw, 64px); border-top: 1px solid var(--line); }
+.term { padding: 24px 24px 0 0; }
+.term + .term { padding-left: 24px; border-left: 1px solid var(--line); }
+.term span { display: block; font-size: 14px; color: var(--ink-2); }
+.term b { display: block; margin-top: 4px; font-size: 21px; font-weight: 600; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+
+/* ---------- reviews ---------- */
+.rating { display: flex; align-items: center; gap: 14px; }
+.rating-num { font-size: 52px; font-weight: 700; letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+.stars { display: flex; gap: 2px; color: var(--star); }
+.stars svg { width: 22px; height: 22px; }
+.rating small { display: block; margin-top: 4px; font-size: 14px; color: var(--ink-2); }
+.rating a { color: var(--ink-2); }
+.rating a:hover { color: var(--green); }
+.reviews-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 14px; }
+.rv { margin: 0; padding: clamp(24px, 3vw, 36px); border-radius: 28px; background: var(--surface); display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.rv blockquote { margin: 0; font-size: 19px; line-height: 1.45; font-weight: 500; }
+.rv-main { grid-row: span 2; background: var(--red-soft); }
+.rv-main blockquote { font-size: clamp(1.6rem, 1.1rem + 1.5vw, 2.4rem); line-height: 1.24; font-weight: 600; letter-spacing: -.022em; }
+.rv-main blockquote::before { content: ""; display: block; width: 46px; height: 36px; margin-bottom: 22px; background: var(--red-ink); -webkit-mask: var(--quote) no-repeat center / contain; mask: var(--quote) no-repeat center / contain; }
+.rv figcaption { display: flex; align-items: center; gap: 12px; font-size: 15px; }
+.rv figcaption b { display: block; font-weight: 600; }
+.rv figcaption span { color: var(--ink-2); font-size: 14px; }
+.ava { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: #fff; color: var(--ink-2); font-weight: 700; font-size: 16px; flex: none; }
+.rv-main .ava { background: var(--red-ink); color: #fff; }
+
+/* ---------- contacts ---------- */
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 14px; }
+.contact-card { padding: clamp(24px, 3vw, 36px); border-radius: 28px; background: var(--surface); display: flex; flex-direction: column; gap: 22px; }
+.contact-card h3 { margin: 0; font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); line-height: 1.15; letter-spacing: -.025em; font-weight: 700; }
+.contact-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.contact-list li { display: flex; gap: 12px; align-items: flex-start; color: var(--ink-2); }
+.contact-list .i { margin-top: 3px; color: var(--green); }
+.contact-list b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.contact-photo { margin-top: auto; aspect-ratio: 16 / 9; border-radius: var(--r-md); }
+.map { position: relative; min-height: 460px; border-radius: 28px; overflow: hidden; background: var(--surface); }
+.map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ---------- watermelon CTA ---------- */
+.melon-wrap { padding-top: clamp(72px, 9vw, 128px); }
+.melon {
+  position: relative; overflow: hidden; text-align: center; color: #fff;
+  padding: calc(30px + clamp(48px, 6vw, 84px)) var(--gutter) clamp(52px, 6vw, 88px);
+  border-radius: 44px;
+  background:
+    linear-gradient(var(--green-deep) 0 14px, var(--rind-light) 14px 22px, #f4fbef 22px 30px, transparent 30px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='150' viewBox='0 0 180 150'%3E%3Cg fill='%231b1414' fill-opacity='.82'%3E%3Cpath transform='translate(26 34) rotate(-24)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(98 22) rotate(18)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(150 70) rotate(-8)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(62 92) rotate(30)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(124 128) rotate(-30)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(16 132) rotate(12)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3C/g%3E%3C/svg%3E") 0 30px / 180px 150px,
+    var(--red-band);
+}
+.melon h2 { max-width: 15em; margin: 0 auto; color: #fff; font-size: clamp(2.1rem, 1.3rem + 3vw, 4rem); line-height: 1.03; }
+.melon p { max-width: 34em; margin: 20px auto 34px; font-size: clamp(1.06rem, 1rem + .3vw, 1.2rem); color: #fff; }
+.melon-inner { position: relative; padding: clamp(28px, 4vw, 44px) clamp(18px, 3vw, 40px); max-width: 860px; margin: 0 auto; border-radius: 32px; background: var(--red-band); }
+
+/* ---------- footer ---------- */
+.footer { padding: 44px 0 48px; color: var(--ink-2); font-size: 15px; }
+.footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; }
+.footer-info { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.footer a { color: var(--ink-2); }
+.footer a:hover { color: var(--green); }
+
+/* ---------- mobile bar ---------- */
+.mbar {
+  position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 60;
+  display: none; align-items: center; gap: 12px; padding: 10px 10px 10px 18px;
+  border-radius: 22px; background: #fff; box-shadow: 0 16px 36px -12px rgba(23, 32, 26, .45), 0 0 0 1px var(--line);
+  transform: translateY(150%); transition: transform .5s var(--ease);
+}
+.mbar.show { transform: none; }
+.mbar-text { flex: 1; min-width: 0; font-size: 14px; line-height: 1.3; color: var(--ink-2); }
+.mbar-text b { display: block; font-size: 16px; color: var(--ink); font-weight: 600; }
+.mbar .btn { min-height: 50px; padding: 0 20px; flex: none; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1180px) {
+  .nav { display: none; }
+  .bento { grid-auto-rows: 188px; }
+}
+@media (max-width: 980px) {
+  .hero-grid, .order-grid, .how-grid, .contact-grid, .reviews-grid { grid-template-columns: minmax(0, 1fr); }
+  .collage { order: -1; }
+  .sticker { left: 16px; }
+  .cart { position: static; }
+  .how-photo { aspect-ratio: 16 / 9; }
+  .rv-main { grid-row: auto; }
+  .map { min-height: 380px; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .topbar { display: none; }
+  .header .wrap { height: 64px; gap: 12px; }
+  .brand-mark { width: 40px; height: 40px; }
+  .brand-name { font-size: 24px; }
+  .brand-sub { display: none; }
+  .header .btn { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .header .btn .long { display: none; }
+  .hero { padding-top: 12px; }
+  .c-a, .c-b { display: none; }
+  .c-main { aspect-ratio: 4 / 3; border-radius: var(--r-lg); }
+  .c-cap { left: 18px; right: 132px; }
+  .cap-more { display: none; }
+  .sticker { left: auto; right: 14px; top: calc(75cqw - 118px); width: 104px; height: 104px; box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--rind-light), 0 0 0 12px var(--green-deep), 0 16px 24px -10px rgba(0,0,0,.45); }
+  .sticker span { font-size: 13.5px; }
+  .cta-row .btn { width: 100%; }
+  .facts { margin-top: 30px; padding-top: 22px; gap: 16px; flex-direction: column; }
+  .sec-head { grid-template-columns: 1fr; }
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 158px; gap: 10px; }
+  .span-r2 { grid-row: span 1; }
+  .tile-label { font-size: 14.5px; padding: 7px 11px; left: 9px; top: 9px; max-width: calc(100% - 18px); border-radius: 12px; }
+  .tile-add { width: 40px; height: 40px; right: 9px; bottom: 9px; }
+  .tile-text { padding: 16px; }
+  .tile-text h3 { font-size: 19px; }
+  .tile-text p { font-size: 14px; }
+  .tile-text .i { width: 28px; height: 28px; }
+  .tile-missing p { display: none; }
+  .tile-missing .go { font-size: 14px; }
+  .custom { flex-direction: column; }
+  .terms { grid-template-columns: 1fr; }
+  .term, .term + .term { padding: 18px 0; border-left: 0; border-bottom: 1px solid var(--line); }
+  .rating-num { font-size: 44px; }
+  .melon { border-radius: 32px; }
+  .mbar { display: flex; }
+  .footer { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 380px) {
+  .tile-label { font-size: 13.5px; }
+  .header .btn { padding: 0 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GroceryStore",
+  "name": "Арбуз",
+  "description": "Магазин продуктов с доставкой по селу Джалган",
+  "image": "img/storefront-night-l.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Дагестанская ул., 12",
+    "addressLocality": "село Джалган",
+    "addressRegion": "Республика Дагестан",
+    "addressCountry": "RU"
+  },
+  "sameAs": ["https://yandex.ru/maps/org/arbuz/144025223347/"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path class="i-fill" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35zm-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.4A7 7 0 0 1 19 9.6C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.2V12l3.2 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.8 6.5h11v9.8h-11z"/><path d="M13.8 9.5h4.3l3.1 3.3v3.5h-7.4"/><circle cx="7" cy="17.6" r="1.9"/><circle cx="17.2" cy="17.6" r="1.9"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path class="i-fill" d="M12 2.9l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.2l-5.6 2.9 1.1-6.2L3 9.5l6.2-.9z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.6l4.4 4.4L19 7.4"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9.5 6.5H20M9.5 12H20M9.5 17.5H20"/><path d="M4.2 6.5h.1M4.2 12h.1M4.2 17.5h.1" stroke-width="2.6"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path d="M3.5 11.2L20.5 4l-7.2 17-2.1-7.7z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="4.6" r="1.8"/><path d="M11.1 6.2L6 20.5M12.9 6.2L18 20.5M8.3 14.2h7.4"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-group">
+      <span class="topbar-item"><svg class="i"><use href="#i-pin"/></svg>село Джалган, Дагестанская ул., 12</span>
+    </div>
+    <div class="topbar-group">
+      <span class="topbar-item"><svg class="i"><use href="#i-truck"/></svg>Доставка по селу Джалган</span>
+      <span class="topbar-item"><svg class="i"><use href="#i-clock"/></svg>Работаем <b>09:00–22:00</b></span>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="«Арбуз», наверх">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="24" fill="#12873c"/>
+        <path d="M6.5 16h35a17.5 17.5 0 0 1-35 0z" fill="#9fd68a"/>
+        <path d="M8.5 16h31a15.5 15.5 0 0 1-31 0z" fill="#fff"/>
+        <path d="M10.5 16h27a13.5 13.5 0 0 1-27 0z" fill="#e8333b"/>
+        <g fill="#1b1414"><ellipse cx="17" cy="21.5" rx="1.1" ry="1.7" transform="rotate(-20 17 21.5)"/><ellipse cx="24" cy="23.5" rx="1.1" ry="1.7"/><ellipse cx="31" cy="21.5" rx="1.1" ry="1.7" transform="rotate(20 31 21.5)"/><ellipse cx="20.5" cy="27" rx="1" ry="1.5" transform="rotate(-12 20.5 27)"/><ellipse cx="27.5" cy="27" rx="1" ry="1.5" transform="rotate(12 27.5 27)"/></g>
+      </svg>
+      <span><span class="brand-name">Арбуз</span><span class="brand-sub">супермаркет в Джалгане</span></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#katalog">Что есть</a>
+      <a href="#zakaz">Собрать заказ</a>
+      <a href="#dostavka">Доставка</a>
+      <a href="#otzyvy">Отзывы</a>
+      <a href="#kontakty">Как найти</a>
+    </nav>
+    <a class="btn btn-wa js-wa" href="https://wa.me/" target="_blank" rel="noopener">
+      <svg class="i"><use href="#i-wa"/></svg><span>Заказать<span class="long"> в WhatsApp</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="hero-title">Привезём продукты из <span class="red nowrap">«Арбуза»</span> к вашей двери</h1>
+        <p class="lead">Продукты, напитки, сладости и всё для дома из магазина на Дагестанской, 12. Пришлите список в WhatsApp — соберём и доставим по Джалгану.</p>
+        <div class="cta-row" id="hero-cta">
+          <a class="btn btn-wa btn-lg js-wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Заказать в WhatsApp</a>
+          <a class="btn btn-soft btn-lg" href="#zakaz"><svg class="i"><use href="#i-list"/></svg>Собрать список</a>
+        </div>
+        <ul class="facts">
+          <li class="fact"><span class="fact-ic"><svg class="i"><use href="#i-clock"/></svg></span><div><b>09:00–22:00</b><span>часы работы</span></div></li>
+          <li class="fact"><span class="fact-ic"><svg class="i"><use href="#i-truck"/></svg></span><div><b>По Джалгану</b><span>доставка</span></div></li>
+          <li class="fact"><a class="fact-link" href="https://yandex.ru/maps/org/arbuz/144025223347/reviews/" target="_blank" rel="noopener"><span class="fact-ic is-star"><svg class="i"><use href="#i-star"/></svg></span><div><b>4,5 из 5</b><span>Яндекс Карты</span></div></a></li>
+        </ul>
+      </div>
+
+      <div class="collage">
+        <div class="ph c-main">
+          <img src="img/storefront-night-l.jpg" srcset="img/storefront-night-s.jpg 800w, img/storefront-night-l.jpg 1600w" sizes="(max-width: 980px) 100vw, 640px" width="1600" height="900" alt="Вход в магазин «Арбуз» вечером: красная вывеска «Супер маркет» с арбузом" fetchpriority="high">
+          <span class="c-cap"><svg class="i"><use href="#i-pin"/></svg><span>Дагестанская ул., 12<span class="cap-more">. Ищите красную вывеску</span></span></span>
+        </div>
+        <div class="ph c-a"><img src="img/dairy-fridge-s.jpg" width="480" height="853" alt="Холодильник с молоком, кефиром, йогуртами и сыром" loading="lazy"></div>
+        <div class="ph c-b"><img src="img/drinks-pepsi-s.jpg" width="480" height="853" alt="Холодильники с газировкой и холодным чаем" loading="lazy"></div>
+        <div class="sticker" aria-hidden="true">
+          <svg viewBox="0 0 138 138"><g fill="#1b1414" fill-opacity=".8"><path transform="translate(34 38) rotate(-30)" d="M0-5C3-2 3.3 2 0 3.6-3.3 2-3-2 0-5z"/><path transform="translate(104 36) rotate(28)" d="M0-5C3-2 3.3 2 0 3.6-3.3 2-3-2 0-5z"/><path transform="translate(26 92) rotate(-60)" d="M0-5C3-2 3.3 2 0 3.6-3.3 2-3-2 0-5z"/><path transform="translate(110 96) rotate(56)" d="M0-5C3-2 3.3 2 0 3.6-3.3 2-3-2 0-5z"/><path transform="translate(70 116) rotate(4)" d="M0-5C3-2 3.3 2 0 3.6-3.3 2-3-2 0-5z"/></g></svg>
+          <span>Доставка<br>по Джалгану</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="katalog" aria-labelledby="cat-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="cat-title">Что есть в «Арбузе»</h2>
+        <p>Это настоящие фото наших полок. Нажмите на раздел и добавьте нужное в список заказа.</p>
+      </div>
+      <div class="bento">
+        <a class="tile span-r2" href="#zakaz" data-go="dairy"><img src="img/dairy-fridge-s.jpg" srcset="img/dairy-fridge-s.jpg 480w, img/dairy-fridge-l.jpg 900w" sizes="(max-width: 760px) 50vw, 25vw" width="480" height="853" alt="Холодильник с молоком, кефиром, йогуртами, творогом и сыром" loading="lazy"><span class="tile-label">Молочное и сыр</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile span-c2" href="#zakaz" data-go="sweets"><img src="img/candy-by-weight-s.jpg" srcset="img/candy-by-weight-s.jpg 800w, img/candy-by-weight-l.jpg 1600w" sizes="(max-width: 760px) 100vw, 50vw" width="800" height="450" alt="Длинные полки с конфетами на развес" loading="lazy"><span class="tile-label">Конфеты на развес</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile span-r2" href="#zakaz" data-go="drinks"><img src="img/drinks-pepsi-s.jpg" srcset="img/drinks-pepsi-s.jpg 480w, img/drinks-pepsi-l.jpg 900w" sizes="(max-width: 760px) 50vw, 25vw" width="480" height="853" alt="Холодильники с газировкой, энергетиками и холодным чаем" loading="lazy"><span class="tile-label">Напитки</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile" href="#zakaz" data-go="grocery"><img src="img/tea-coffee-s.jpg" srcset="img/tea-coffee-s.jpg 800w, img/tea-coffee-l.jpg 1600w" sizes="(max-width: 760px) 50vw, 25vw" width="800" height="450" alt="Полки с чаем и кофе" loading="lazy"><span class="tile-label">Чай и кофе</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile" href="#zakaz" data-go="snacks"><img src="img/chips-aisle-s.jpg" srcset="img/chips-aisle-s.jpg 480w, img/chips-aisle-l.jpg 900w" sizes="(max-width: 760px) 50vw, 25vw" width="480" height="853" alt="Стеллажи с чипсами и снеками" loading="lazy" style="object-position:50% 40%"><span class="tile-label">Чипсы и снеки</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile span-c2" href="#zakaz" data-go="home"><img src="img/household-detergents-s.jpg" srcset="img/household-detergents-s.jpg 800w, img/household-detergents-l.jpg 1600w" sizes="(max-width: 760px) 100vw, 50vw" width="800" height="450" alt="Бытовая химия: порошки, гели для стирки, средства для посуды" loading="lazy"><span class="tile-label">Бытовая химия</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile span-r2" href="#zakaz" data-go="meat"><img src="img/frozen-chicken-s.jpg" srcset="img/frozen-chicken-s.jpg 480w, img/frozen-chicken-l.jpg 900w" sizes="(max-width: 760px) 50vw, 25vw" width="480" height="853" alt="Морозильный ларь с курицей и сливочным маслом" loading="lazy"><span class="tile-label">Курица и заморозка</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile span-r2" href="#zakaz" data-go="sweets"><img src="img/chocolate-kids-s.jpg" srcset="img/chocolate-kids-s.jpg 480w, img/chocolate-kids-l.jpg 900w" sizes="(max-width: 760px) 50vw, 25vw" width="480" height="853" alt="Полки с шоколадом, детскими сладостями и леденцами" loading="lazy"><span class="tile-label">Шоколад и сладости</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile" href="#zakaz" data-go="home"><img src="img/paper-hygiene-s.jpg" srcset="img/paper-hygiene-s.jpg 800w, img/paper-hygiene-l.jpg 1600w" sizes="(max-width: 760px) 50vw, 25vw" width="800" height="450" alt="Туалетная бумага, жидкое мыло и кондиционеры для белья" loading="lazy"><span class="tile-label">Бумага и мыло</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile" href="#zakaz" data-go="care"><img src="img/care-haircolor-s.jpg" srcset="img/care-haircolor-s.jpg 800w, img/care-haircolor-l.jpg 1600w" sizes="(max-width: 760px) 50vw, 25vw" width="800" height="450" alt="Краска для волос, зубная паста и дезодоранты" loading="lazy"><span class="tile-label">Уход и косметика</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile span-c2" href="#zakaz" data-go="grocery"><img src="img/sauces-s.jpg" srcset="img/sauces-s.jpg 800w, img/sauces-l.jpg 1600w" sizes="(max-width: 760px) 100vw, 50vw" width="800" height="450" alt="Майонез, кетчуп и соусы в мягкой упаковке" loading="lazy"><span class="tile-label">Соусы и майонез</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile" href="#zakaz" data-go="meat"><img src="img/chilled-cream-sausage-s.jpg" srcset="img/chilled-cream-sausage-s.jpg 800w, img/chilled-cream-sausage-l.jpg 1600w" sizes="(max-width: 760px) 50vw, 25vw" width="800" height="450" alt="Холодильная витрина со сливками, молочными продуктами и колбасой" loading="lazy"><span class="tile-label">Колбаса и сливки</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile" href="#zakaz" data-go="meat"><img src="img/snacks-icecream-s.jpg" srcset="img/snacks-icecream-s.jpg 800w, img/snacks-icecream-l.jpg 1600w" sizes="(max-width: 760px) 50vw, 25vw" width="800" height="450" alt="Ларь с мороженым и стенд со снеками" loading="lazy" style="object-position:50% 85%"><span class="tile-label">Мороженое</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile" href="#zakaz" data-go="kids"><img src="img/toys-s.jpg" srcset="img/toys-s.jpg 480w, img/toys-l.jpg 900w" sizes="(max-width: 760px) 50vw, 25vw" width="480" height="853" alt="Стеллаж с игрушками" loading="lazy" style="object-position:50% 30%"><span class="tile-label">Игрушки</span><span class="tile-add" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></a>
+        <a class="tile tile-text tile-stationery span-c2" href="#zakaz" data-go="kids">
+          <svg class="i"><use href="#i-compass"/></svg>
+          <div>
+            <h3>Канцтовары</h3>
+            <p>«…во всём районе только тут нашли циркуль»<cite>— отзыв покупателя на Яндекс Картах</cite></p>
+          </div>
+        </a>
+        <a class="tile tile-text tile-missing" href="#zakaz" data-go="custom">
+          <svg class="i" style="color:var(--green)"><use href="#i-search"/></svg>
+          <div>
+            <h3>Не нашли нужное?</h3>
+            <p>Впишите товар в список, и мы проверим, есть ли он в магазине.</p>
+          </div>
+          <span class="go">Вписать товар <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="zakaz" aria-labelledby="order-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="order-title">Соберите список заказа</h2>
+        <p>Нажимайте на товары или впишите свои. Список уйдёт одним сообщением в WhatsApp, там же уточним сумму и доставку.</p>
+      </div>
+      <div class="order-grid">
+        <div class="picker">
+          <div class="pills" role="group" aria-label="Разделы товаров" id="pills"></div>
+          <div id="groups"></div>
+          <form class="custom" id="custom-form" autocomplete="off">
+            <label class="sr-only" for="custom-input">Свой товар</label>
+            <input class="field" id="custom-input" name="item" maxlength="60" placeholder="Впишите, что ещё нужно" enterkeyhint="done">
+            <button class="btn btn-soft" type="submit"><svg class="i"><use href="#i-plus"/></svg>Добавить</button>
+          </form>
+        </div>
+
+        <aside class="cart" aria-labelledby="cart-title">
+          <div class="cart-head">
+            <h3 id="cart-title">Ваш список <span class="count" id="count">0</span></h3>
+            <button class="clear" type="button" id="clear" hidden>Очистить</button>
+          </div>
+          <ul class="lines" id="lines"></ul>
+          <div class="empty" id="empty">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 18h40a20 20 0 0 1-40 0z" fill="#9fd68a"/><path d="M6.5 18h35a17.5 17.5 0 0 1-35 0z" fill="#fff"/><path d="M8.5 18h31a15.5 15.5 0 0 1-31 0z" fill="#e8333b"/><g fill="#1b1414"><ellipse cx="17" cy="24" rx="1.2" ry="1.9"/><ellipse cx="24" cy="27" rx="1.2" ry="1.9"/><ellipse cx="31" cy="24" rx="1.2" ry="1.9"/></g></svg>
+            <span>Пока пусто. Нажмите на товары или просто напишите нам, что нужно.</span>
+          </div>
+          <label class="cart-label" for="comment">Адрес и комментарий <span style="font-weight:400">(необязательно)</span></label>
+          <textarea class="field" id="comment" rows="2" maxlength="300" placeholder="Улица, дом, ориентир"></textarea>
+          <span class="cart-label" id="preview-label">Так выглядит ваше сообщение</span>
+          <p class="bubble" id="preview" aria-labelledby="preview-label"></p>
+          <a class="btn btn-wa btn-lg btn-block js-wa" id="send" href="https://wa.me/" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg><span id="send-label">Написать в WhatsApp</span></a>
+          <p class="cart-note">Сумму заказа и стоимость доставки уточним в ответ. Доставляем по селу Джалган.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="dostavka" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="how-grid">
+        <div class="ph how-photo"><img src="img/grocery-aisle-s.jpg" srcset="img/grocery-aisle-s.jpg 800w, img/grocery-aisle-l.jpg 1600w" sizes="(max-width: 980px) 100vw, 50vw" width="800" height="450" alt="Торговый зал магазина «Арбуз»: длинные ряды полок с товарами" loading="lazy"></div>
+        <div>
+          <h2 id="how-title">Как работает доставка</h2>
+          <ol class="steps">
+            <li class="step"><div><h3>Соберите список</h3><p>На сайте или прямо в WhatsApp. Можно просто: «молоко 2, курица, чай».</p></div></li>
+            <li class="step"><div><h3>Отправьте нам в WhatsApp</h3><p>Ответим, уточним наличие, сумму заказа и стоимость доставки.</p></div></li>
+            <li class="step"><div><h3>Получите заказ у двери</h3><p>Привезём по селу Джалган, время согласуем в чате.</p></div></li>
+          </ol>
+        </div>
+      </div>
+      <div class="terms">
+        <div class="term"><span>Зона доставки</span><b>село Джалган</b></div>
+        <div class="term"><span>Магазин работает</span><b>09:00–22:00</b></div>
+        <div class="term"><span>Стоимость доставки</span><b>уточняйте при заказе</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="otzyvy" aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="rev-title">Покупатели об «Арбузе»</h2>
+        <div class="rating">
+          <span class="rating-num">4,5</span>
+          <div>
+            <div class="stars" role="img" aria-label="Рейтинг 4,5 из 5">
+              <svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
+              <svg viewBox="0 0 24 24"><defs><linearGradient id="half-star"><stop offset="50%" stop-color="#f2a20c"/><stop offset="50%" stop-color="#e3e7df"/></linearGradient></defs><path fill="url(#half-star)" d="M12 2.9l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.2l-5.6 2.9 1.1-6.2L3 9.5l6.2-.9z"/></svg>
+            </div>
+            <small><a href="https://yandex.ru/maps/org/arbuz/144025223347/reviews/" target="_blank" rel="noopener">18 оценок на Яндекс Картах</a></small>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid" style="--quote:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 36'%3E%3Cpath d='M0 36V20C0 8 6 1.5 18 0l1.6 5.4C12.4 7.2 9.4 11 9.2 17H18v19zm26 0V20C26 8 32 1.5 44 0l1.6 5.4C38.4 7.2 35.4 11 35.2 17H44v19z'/%3E%3C/svg%3E&quot;)">
+        <figure class="rv rv-main">
+          <blockquote>Для такого маленького магазина очень хороший ассортимент! И цены не высокие</blockquote>
+          <figcaption><span class="ava" aria-hidden="true">Н</span><div><b>Не Ахмед</b><span>14 октября 2025 · Яндекс Карты</span></div></figcaption>
+        </figure>
+        <figure class="rv">
+          <blockquote>Время было позднее, уже в городе все канцтовары были закрыты, и во всём районе только тут нашли циркуль. Сам магазин уютный</blockquote>
+          <figcaption><span class="ava" aria-hidden="true">М</span><div><b>418336 Минатуллаев</b><span>13 декабря 2024 · Яндекс Карты</span></div></figcaption>
+        </figure>
+        <figure class="rv">
+          <blockquote>Отличный магазин! Всё аккуратно и чисто</blockquote>
+          <figcaption><span class="ava" aria-hidden="true">М</span><div><b>Мальвина Ибрагтмова</b><span>1 ноября 2024 · Яндекс Карты</span></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="kontakty" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="contact-title">Как нас найти</h2>
+        <p>Закажите доставку или заходите сами: работаем с 9:00 до 22:00.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>село Джалган, Дагестанская ул., 12</h3>
+          <ul class="contact-list">
+            <li><svg class="i"><use href="#i-clock"/></svg><span>Работаем <b>с 9:00 до 22:00</b></span></li>
+            <li><svg class="i"><use href="#i-truck"/></svg><span>Доставка по селу Джалган, заказ в WhatsApp</span></li>
+            <li><svg class="i"><use href="#i-pin"/></svg><span>Ищите красную вывеску «Супер маркет» с арбузом</span></li>
+          </ul>
+          <div class="contact-actions">
+            <a class="btn btn-wa js-wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Написать в WhatsApp</a>
+            <a class="btn btn-white" href="https://yandex.ru/maps/org/arbuz/144025223347/" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Построить маршрут</a>
+          </div>
+          <div class="ph contact-photo"><img src="img/storefront-night-s.jpg" width="800" height="450" alt="Вход в магазин «Арбуз» вечером" loading="lazy"></div>
+        </div>
+        <div class="map">
+          <iframe src="https://yandex.ru/map-widget/v1/org/arbuz/144025223347/?ll=48.304318%2C42.033283&amp;z=16" title="«Арбуз» на Яндекс Картах: село Джалган, Дагестанская ул., 12" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="melon-wrap" aria-labelledby="final-title">
+    <div class="wrap">
+      <div class="melon">
+        <div class="melon-inner">
+          <h2 id="final-title">Напишите, что нужно, а мы соберём и привезём</h2>
+          <p>Доставка по селу Джалган. Магазин работает с 9:00 до 22:00.</p>
+          <a class="btn btn-white btn-lg js-wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="i i-wa"><use href="#i-wa"/></svg>Заказать в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="«Арбуз», наверх">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#12873c"/><path d="M6.5 16h35a17.5 17.5 0 0 1-35 0z" fill="#9fd68a"/><path d="M8.5 16h31a15.5 15.5 0 0 1-31 0z" fill="#fff"/><path d="M10.5 16h27a13.5 13.5 0 0 1-27 0z" fill="#e8333b"/><g fill="#1b1414"><ellipse cx="17" cy="21.5" rx="1.1" ry="1.7"/><ellipse cx="24" cy="23.5" rx="1.1" ry="1.7"/><ellipse cx="31" cy="21.5" rx="1.1" ry="1.7"/></g></svg>
+      <span class="brand-name">Арбуз</span>
+    </a>
+    <div class="footer-info">
+      <span>село Джалган, Дагестанская ул., 12</span>
+      <span>09:00–22:00</span>
+      <a href="https://yandex.ru/maps/org/arbuz/144025223347/" target="_blank" rel="noopener">Мы на Яндекс Картах</a>
+    </div>
+    <span>© <span id="year">2026</span> «Арбуз»</span>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <div class="mbar-text" id="mbar-text"><b>Доставка по Джалгану</b>с 9:00 до 22:00</div>
+  <a class="btn btn-wa js-wa" href="https://wa.me/" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg><span id="mbar-btn">Заказать</span></a>
+</div>
+
+<div class="sr-only" id="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ================= НАСТРОЙКА =================
+     Номер WhatsApp магазина: только цифры, с кодом страны.
+     Например: '79281234567'.
+     Пока номер пустой, кнопка откроет WhatsApp и предложит выбрать, кому отправить. */
+  var WHATSAPP_PHONE = '';
+  /* ============================================= */
+
+  var GROUPS = [
+    { id: 'dairy',   short: 'Молочное',        title: 'Молочное и сыр',            img: 'img/dairy-fridge-s.jpg',         items: ['Молоко', 'Кефир', 'Йогурт', 'Творог', 'Сметана', 'Сыр', 'Сливочное масло', 'Сливки'] },
+    { id: 'meat',    short: 'Мясо и заморозка', title: 'Курица, колбаса, заморозка', img: 'img/frozen-chicken-s.jpg',       items: ['Курица', 'Колбаса', 'Мороженое'] },
+    { id: 'grocery', short: 'Чай и соусы',     title: 'Чай, кофе и соусы',          img: 'img/tea-coffee-s.jpg',           items: ['Чай', 'Кофе', 'Майонез', 'Кетчуп'] },
+    { id: 'sweets',  short: 'Сладкое',         title: 'Сладкое',                    img: 'img/candy-by-weight-s.jpg',      items: ['Конфеты на развес', 'Шоколад', 'Леденцы'] },
+    { id: 'snacks',  short: 'Снеки',           title: 'Снеки',                      img: 'img/chips-aisle-s.jpg',          items: ['Чипсы', 'Сухарики'] },
+    { id: 'drinks',  short: 'Напитки',         title: 'Напитки',                    img: 'img/drinks-pepsi-s.jpg',         items: ['Газировка', 'Энергетики', 'Холодный чай', 'Вода'] },
+    { id: 'home',    short: 'Для дома',        title: 'Для дома',                   img: 'img/household-detergents-s.jpg', items: ['Стиральный порошок', 'Гель для стирки', 'Кондиционер для белья', 'Средство для посуды', 'Туалетная бумага', 'Жидкое мыло', 'Влажные салфетки'] },
+    { id: 'care',    short: 'Уход',            title: 'Уход',                       img: 'img/care-haircolor-s.jpg',       items: ['Зубная паста', 'Зубная щётка', 'Шампунь', 'Дезодорант', 'Краска для волос'] },
+    { id: 'kids',    short: 'Детям',           title: 'Детям и для школы',          img: 'img/toys-s.jpg',                 items: ['Игрушки', 'Канцтовары'] }
+  ];
+
+  var GREETING = 'Здравствуйте! Хочу заказать доставку из «Арбуза».';
+  var STORE_KEY = 'arbuz-order-v1';
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (id) { return document.getElementById(id); };
+
+  var list = new Map();
+  var comment = '';
+
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE_KEY) || 'null');
+    if (saved && Array.isArray(saved.items)) {
+      saved.items.forEach(function (pair) {
+        if (Array.isArray(pair) && typeof pair[0] === 'string' && pair[1] > 0) {
+          list.set(pair[0].slice(0, 60), Math.min(99, pair[1] | 0));
+        }
+      });
+      if (typeof saved.comment === 'string') comment = saved.comment.slice(0, 300);
+    }
+  } catch (e) { /* хранилище недоступно — работаем без него */ }
+
+  function persist() {
+    try { localStorage.setItem(STORE_KEY, JSON.stringify({ items: Array.from(list.entries()), comment: comment })); } catch (e) {}
+  }
+
+  function plural(n, one, few, many) {
+    var a = Math.abs(n) % 100, b = a % 10;
+    if (a > 10 && a < 20) return many;
+    if (b > 1 && b < 5) return few;
+    if (b === 1) return one;
+    return many;
+  }
+
+  function buildMessage() {
+    var note = comment.trim();
+    if (!list.size && !note) return GREETING;
+    var out = [list.size ? 'Здравствуйте! Хочу заказать доставку из «Арбуза»:' : GREETING];
+    var n = 1;
+    list.forEach(function (qty, name) { out.push(n++ + '. ' + name + (qty > 1 ? ' — ' + qty : '')); });
+    if (note) out.push('', 'Адрес и комментарий: ' + note);
+    return out.join('\n');
+  }
+
+  function waLink(text) {
+    var phone = String(WHATSAPP_PHONE).replace(/\D/g, '');
+    return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(text);
+  }
+
+  function say(text) {
+    var s = $('status');
+    s.textContent = '';
+    setTimeout(function () { s.textContent = text; }, 30);
+  }
+
+  function bump(el) {
+    if (reduceMotion || !el) return;
+    el.classList.remove('bump');
+    void el.offsetWidth;
+    el.classList.add('bump');
+  }
+
+  function icon(name) {
+    var ns = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('class', 'i');
+    svg.setAttribute('aria-hidden', 'true');
+    var use = document.createElementNS(ns, 'use');
+    use.setAttribute('href', '#i-' + name);
+    svg.appendChild(use);
+    return svg;
+  }
+
+  /* ---------- pills & chips ---------- */
+  var pillsEl = $('pills');
+  var groupsEl = $('groups');
+  var chipByName = new Map();
+
+  [{ id: 'all', short: 'Все' }].concat(GROUPS).forEach(function (g) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pill';
+    b.dataset.filter = g.id;
+    b.setAttribute('aria-pressed', g.id === 'all' ? 'true' : 'false');
+    b.textContent = g.short;
+    b.addEventListener('click', function () { setFilter(g.id); });
+    pillsEl.appendChild(b);
+  });
+
+  GROUPS.forEach(function (g) {
+    var sec = document.createElement('div');
+    sec.className = 'group';
+    sec.dataset.group = g.id;
+    var h = document.createElement('h3');
+    var img = document.createElement('img');
+    img.className = 'g-thumb';
+    img.src = g.img; img.alt = ''; img.width = 38; img.height = 38; img.loading = 'lazy';
+    h.appendChild(img);
+    h.appendChild(document.createTextNode(g.title));
+    var wrap = document.createElement('div');
+    wrap.className = 'chips';
+    g.items.forEach(function (name) {
+      var c = document.createElement('button');
+      c.type = 'button';
+      c.className = 'chip';
+      c.dataset.item = name;
+      var nameEl = document.createElement('span');
+      nameEl.textContent = name;
+      var q = document.createElement('span');
+      q.className = 'qty';
+      q.setAttribute('aria-hidden', 'true');
+      c.appendChild(icon('plus'));
+      c.appendChild(nameEl);
+      c.appendChild(q);
+      c.addEventListener('click', function () { add(name, c); });
+      chipByName.set(name, c);
+      wrap.appendChild(c);
+    });
+    sec.appendChild(h);
+    sec.appendChild(wrap);
+    groupsEl.appendChild(sec);
+  });
+
+  function setFilter(id) {
+    pillsEl.querySelectorAll('.pill').forEach(function (p) {
+      var on = p.dataset.filter === id;
+      p.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (on && p.scrollIntoView && pillsEl.scrollWidth > pillsEl.clientWidth) {
+        pillsEl.scrollTo({ left: p.offsetLeft - 24, behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
+    });
+    groupsEl.querySelectorAll('.group').forEach(function (g) {
+      g.hidden = !(id === 'all' || g.dataset.group === id);
+    });
+  }
+
+  /* ---------- list operations ---------- */
+  var lastAdded = null;
+
+  function add(name, sourceEl) {
+    name = name.replace(/\s+/g, ' ').trim().slice(0, 60);
+    if (!name) return;
+    name = name.charAt(0).toUpperCase() + name.slice(1);
+    var qty = Math.min(99, (list.get(name) || 0) + 1);
+    var isNew = !list.has(name);
+    list.set(name, qty);
+    lastAdded = isNew ? name : null;
+    render();
+    bump(sourceEl || chipByName.get(name));
+    bump($('count'));
+    say(isNew ? name + ' — добавлено в список' : name + ' — теперь ' + qty);
+  }
+
+  function setQty(name, qty) {
+    if (qty <= 0) { list.delete(name); say(name + ' — убрано из списка'); }
+    else list.set(name, Math.min(99, qty));
+    lastAdded = null;
+    render();
+  }
+
+  /* ---------- render ---------- */
+  var linesEl = $('lines');
+
+  function render() {
+    var n = list.size;
+
+    chipByName.forEach(function (chip, name) {
+      var qty = list.get(name) || 0;
+      var on = qty > 0;
+      chip.classList.toggle('is-on', on);
+      chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+      chip.setAttribute('aria-label', on ? name + ', в списке ' + qty + ', добавить ещё' : name + ', добавить в список');
+      chip.querySelector('.qty').textContent = on ? qty : '';
+      chip.querySelector('use').setAttribute('href', on ? '#i-check' : '#i-plus');
+    });
+
+    linesEl.textContent = '';
+    list.forEach(function (qty, name) {
+      var li = document.createElement('li');
+      li.className = 'line' + (name === lastAdded ? ' enter' : '');
+      var label = document.createElement('span');
+      label.className = 'line-name';
+      label.textContent = name;
+
+      var step = document.createElement('div');
+      step.className = 'stepper';
+      var minus = document.createElement('button');
+      minus.type = 'button';
+      minus.setAttribute('aria-label', 'Меньше: ' + name);
+      minus.appendChild(icon('minus'));
+      minus.addEventListener('click', function () { setQty(name, qty - 1); });
+      var out = document.createElement('output');
+      out.textContent = qty;
+      out.setAttribute('aria-label', 'Количество: ' + qty);
+      var plus = document.createElement('button');
+      plus.type = 'button';
+      plus.setAttribute('aria-label', 'Больше: ' + name);
+      plus.appendChild(icon('plus'));
+      plus.addEventListener('click', function () { setQty(name, qty + 1); });
+      step.appendChild(minus); step.appendChild(out); step.appendChild(plus);
+
+      var rm = document.createElement('button');
+      rm.type = 'button';
+      rm.className = 'remove';
+      rm.setAttribute('aria-label', 'Убрать: ' + name);
+      rm.appendChild(icon('x'));
+      rm.addEventListener('click', function () { setQty(name, 0); });
+
+      li.appendChild(label); li.appendChild(step); li.appendChild(rm);
+      linesEl.appendChild(li);
+    });
+    if (lastAdded) {
+      var last = linesEl.lastElementChild;
+      if (last && last.scrollIntoView) linesEl.scrollTop = linesEl.scrollHeight;
+    }
+
+    $('count').textContent = n;
+    $('empty').hidden = n > 0;
+    $('clear').hidden = n === 0;
+    $('send-label').textContent = n ? 'Отправить в WhatsApp' : 'Написать в WhatsApp';
+
+    var words = n + ' ' + plural(n, 'товар', 'товара', 'товаров');
+    var mText = $('mbar-text');
+    mText.textContent = '';
+    var b = document.createElement('b');
+    b.textContent = n ? 'В списке ' + words : 'Доставка по Джалгану';
+    mText.appendChild(b);
+    mText.appendChild(document.createTextNode(n ? 'отправим одним сообщением' : 'с 9:00 до 22:00'));
+    $('mbar-btn').textContent = n ? 'Отправить' : 'Заказать';
+
+    var msg = buildMessage();
+    $('preview').textContent = msg;
+    var href = waLink(msg);
+    document.querySelectorAll('.js-wa').forEach(function (a) { a.href = href; });
+
+    persist();
+  }
+
+  /* ---------- events ---------- */
+  $('custom-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var input = $('custom-input');
+    if (!input.value.trim()) { input.focus(); return; }
+    add(input.value);
+    input.value = '';
+    input.focus();
+  });
+
+  $('clear').addEventListener('click', function () {
+    list.clear();
+    lastAdded = null;
+    render();
+    say('Список очищен');
+  });
+
+  var commentEl = $('comment');
+  commentEl.value = comment;
+  commentEl.addEventListener('input', function () {
+    comment = commentEl.value.slice(0, 300);
+    lastAdded = null;
+    var msg = buildMessage();
+    $('preview').textContent = msg;
+    var href = waLink(msg);
+    document.querySelectorAll('.js-wa').forEach(function (a) { a.href = href; });
+    persist();
+  });
+
+  document.querySelectorAll('[data-go]').forEach(function (tile) {
+    tile.addEventListener('click', function (e) {
+      e.preventDefault();
+      var target = tile.dataset.go;
+      setFilter(target === 'custom' ? 'all' : target);
+      var order = $('zakaz');
+      order.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      if (target === 'custom') {
+        setTimeout(function () { $('custom-input').focus({ preventScroll: true }); }, reduceMotion ? 0 : 650);
+      }
+    });
+  });
+
+  var header = document.querySelector('.header');
+  function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  var mbar = $('mbar');
+  if ('IntersectionObserver' in window) {
+    var heroSeen = true, finalSeen = false;
+    var sync = function () { mbar.classList.toggle('show', !heroSeen && !finalSeen); };
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { heroSeen = en.isIntersecting || en.boundingClientRect.top > 0; });
+      sync();
+    }).observe($('hero-cta'));
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { finalSeen = en.isIntersecting; });
+      sync();
+    }, { rootMargin: '0px 0px -20% 0px' }).observe(document.querySelector('.melon'));
+  } else {
+    mbar.classList.add('show');
+  }
+
+  $('year').textContent = new Date().getFullYear();
+  render();
+})();
+</script>
+</body>
+</html>
