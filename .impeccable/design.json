@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T21:50:35.800Z",
+  "title": "Design System: Арбуз",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Белый",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#121212",
+          "#292929",
+          "#484848",
+          "#696969",
+          "#8c8c8c",
+          "#b1b1b1",
+          "#d4d4d4",
+          "#eeeeee"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Подложка",
+        "canonical": "oklch(96.8% 0.006 129)",
+        "tonalRamp": [
+          "#111210",
+          "#282927",
+          "#474845",
+          "#686a66",
+          "#8b8d89",
+          "#b0b2ae",
+          "#d3d5d2",
+          "#eeefec"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Подложка темнее",
+        "canonical": "oklch(93.8% 0.011 129)",
+        "tonalRamp": [
+          "#11120f",
+          "#282a26",
+          "#464942",
+          "#676a63",
+          "#8a8e86",
+          "#afb3ab",
+          "#d3d5d0",
+          "#edefeb"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Линия",
+        "canonical": "oklch(91.4% 0.016 130)",
+        "tonalRamp": [
+          "#10120e",
+          "#272a25",
+          "#454a41",
+          "#666b61",
+          "#898e84",
+          "#aeb3a9",
+          "#d2d6cf",
+          "#ecf0e9"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Чернила",
+        "canonical": "oklch(23.2% 0.017 156)",
+        "tonalRamp": [
+          "#0e1310",
+          "#252a27",
+          "#414b44",
+          "#616c65",
+          "#848f88",
+          "#a9b5ac",
+          "#cfd6d1",
+          "#e9f1eb"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Чернила вторые",
+        "canonical": "oklch(43.7% 0.020 151)",
+        "tonalRamp": [
+          "#0e130f",
+          "#252b26",
+          "#404b42",
+          "#616c63",
+          "#849086",
+          "#a8b5ab",
+          "#cfd7d0",
+          "#e9f1ea"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Чернила третьи",
+        "canonical": "oklch(52.1% 0.017 149)",
+        "tonalRamp": [
+          "#0f130f",
+          "#262a26",
+          "#424a43",
+          "#636c64",
+          "#868f87",
+          "#aab4ab",
+          "#d0d6d1",
+          "#eaf0eb"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Красная мякоть",
+        "canonical": "oklch(60.9% 0.216 25)",
+        "tonalRamp": [
+          "#300000",
+          "#4e0d0f",
+          "#8a0315",
+          "#b33737",
+          "#dc5e5a",
+          "#ff847d",
+          "#ffbcb5",
+          "#ffd6cf"
+        ]
+      },
+      "red-ink": {
+        "role": "secondary",
+        "displayName": "Красный бренда для текста",
+        "canonical": "oklch(56.1% 0.202 25)",
+        "tonalRamp": [
+          "#300000",
+          "#4e0d0e",
+          "#8a0315",
+          "#b33737",
+          "#dc5e59",
+          "#ff847d",
+          "#ffbcb5",
+          "#ffd6cf"
+        ]
+      },
+      "red-band": {
+        "role": "secondary",
+        "displayName": "Красная полоса",
+        "canonical": "oklch(57.5% 0.201 24)",
+        "tonalRamp": [
+          "#300000",
+          "#4e0c10",
+          "#8a0218",
+          "#b33739",
+          "#dc5d5c",
+          "#ff847f",
+          "#ffbcb6",
+          "#ffd6d0"
+        ]
+      },
+      "red-soft": {
+        "role": "secondary",
+        "displayName": "Розовая мякоть",
+        "canonical": "oklch(95.6% 0.019 22)",
+        "tonalRamp": [
+          "#16100f",
+          "#2e2726",
+          "#514443",
+          "#736564",
+          "#978887",
+          "#bdadac",
+          "#dbd1d1",
+          "#f6eceb"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Зелёная корка",
+        "canonical": "oklch(54.7% 0.148 149)",
+        "tonalRamp": [
+          "#001b00",
+          "#00340d",
+          "#005b0e",
+          "#007f34",
+          "#3ca457",
+          "#65cb7c",
+          "#ace5b5",
+          "#c5ffce"
+        ]
+      },
+      "green-hover": {
+        "role": "primary",
+        "displayName": "Зелёная корка, наведение",
+        "canonical": "oklch(49.0% 0.132 149)",
+        "tonalRamp": [
+          "#001a00",
+          "#003311",
+          "#005a19",
+          "#1d7d3c",
+          "#49a25e",
+          "#70c882",
+          "#b0e3b8",
+          "#cafed2"
+        ]
+      },
+      "green-deep": {
+        "role": "primary",
+        "displayName": "Тёмная корка",
+        "canonical": "oklch(41.7% 0.109 150)",
+        "tonalRamp": [
+          "#001902",
+          "#0a3217",
+          "#025725",
+          "#327a46",
+          "#579f68",
+          "#7cc58c",
+          "#b6e1be",
+          "#d0fcd8"
+        ]
+      },
+      "green-soft": {
+        "role": "primary",
+        "displayName": "Светло-зелёная подложка",
+        "canonical": "oklch(95.0% 0.022 152)",
+        "tonalRamp": [
+          "#0d130f",
+          "#242b26",
+          "#3f4b42",
+          "#606d63",
+          "#839085",
+          "#a7b5aa",
+          "#ced7d0",
+          "#e8f1ea"
+        ]
+      },
+      "rind-light": {
+        "role": "primary",
+        "displayName": "Светлая корка",
+        "canonical": "oklch(81.9% 0.117 137)",
+        "tonalRamp": [
+          "#011800",
+          "#16300a",
+          "#245506",
+          "#457830",
+          "#689d53",
+          "#8dc378",
+          "#bfe0b2",
+          "#d8facc"
+        ]
+      },
+      "seed": {
+        "role": "tertiary",
+        "displayName": "Косточка",
+        "canonical": "oklch(20.0% 0.012 18)",
+        "tonalRamp": [
+          "#151010",
+          "#2c2827",
+          "#4e4545",
+          "#6f6666",
+          "#938989",
+          "#b8aeae",
+          "#d9d2d2",
+          "#f3eded"
+        ]
+      },
+      "star": {
+        "role": "tertiary",
+        "displayName": "Звезда",
+        "canonical": "oklch(77.2% 0.162 73)",
+        "tonalRamp": [
+          "#280400",
+          "#441e00",
+          "#783100",
+          "#9e5400",
+          "#c57900",
+          "#ed9e0a",
+          "#fbcb8d",
+          "#ffe5a6"
+        ]
+      },
+      "bubble": {
+        "role": "tertiary",
+        "displayName": "Пузырь WhatsApp",
+        "canonical": "oklch(94.4% 0.049 140)",
+        "tonalRamp": [
+          "#0a1508",
+          "#212d1f",
+          "#3a4e35",
+          "#5a7055",
+          "#7d9478",
+          "#a1b99c",
+          "#cbd9c7",
+          "#e5f4e1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Только H1 первого экрана."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Заголовки разделов и финального блока."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Шаги, текстовые плитки, панель списка, карточка контактов."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Главный отзыв."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Название «Арбуз» рядом со знаком."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Вводный абзац первого экрана и финального блока."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Основной текст, 16px на телефоне."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Чипы, подписи в карточках, подвал."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Подписи под фактами и полями, верхняя строка; без капса."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Текст кнопок; 18px у большой кнопки."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-sm",
+        "value": "0 6px 16px -8px rgba(23, 32, 26, .30)",
+        "purpose": "Белый ярлык поверх фото плитки."
+      },
+      {
+        "name": "shadow",
+        "value": "0 22px 44px -22px rgba(23, 32, 26, .38)",
+        "purpose": "Липкая панель «Ваш список»."
+      },
+      {
+        "name": "shadow-green",
+        "value": "0 10px 22px -12px rgba(18, 135, 60, .9)",
+        "purpose": "Кнопки WhatsApp; наведение 0 14px 26px -12px rgba(18, 135, 60, .95)."
+      },
+      {
+        "name": "shadow-warm",
+        "value": "0 12px 26px -14px rgba(60, 0, 0, .55)",
+        "purpose": "Белая кнопка."
+      },
+      {
+        "name": "shadow-header",
+        "value": "0 1px 0 var(--line), 0 10px 24px -20px rgba(23, 32, 26, .5)",
+        "purpose": "Шапка после прокрутки."
+      },
+      {
+        "name": "shadow-bar",
+        "value": "0 16px 36px -12px rgba(23, 32, 26, .45), 0 0 0 1px var(--line)",
+        "purpose": "Нижняя плашка на телефоне."
+      },
+      {
+        "name": "rind-rings",
+        "value": "0 0 0 5px #fff, 0 0 0 11px var(--rind-light), 0 0 0 17px var(--green-deep), 0 22px 30px -12px rgba(0,0,0,.4)",
+        "purpose": "Только наклейка: кольца корки."
+      },
+      {
+        "name": "focus-field",
+        "value": "0 0 0 4px rgba(18, 135, 60, .14)",
+        "purpose": "Фокус поля ввода вместе с зелёной рамкой."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Все сдвиги и масштабы (.3–.7s)."
+      },
+      {
+        "name": "color",
+        "value": ".2s",
+        "purpose": "Смена цвета, фона и рамки."
+      },
+      {
+        "name": "bump",
+        "value": "scale(.92) to scale(1), .42s ease",
+        "purpose": "Добавление товара и смена счётчика."
+      },
+      {
+        "name": "line-in",
+        "value": "opacity .2 to 1, translateY(-6px) to 0, .45s ease",
+        "purpose": "Новая строка в списке."
+      },
+      {
+        "name": "reduced",
+        "value": "animation/transition .01ms",
+        "purpose": "При prefers-reduced-motion движение отключено."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-hide",
+        "value": "1180px"
+      },
+      {
+        "name": "single-column",
+        "value": "980px"
+      },
+      {
+        "name": "phone",
+        "value": "760px"
+      },
+      {
+        "name": "small-phone",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Кнопка WhatsApp",
+      "kind": "button",
+      "refersTo": "button-wa",
+      "description": "Главное действие: заказ в WhatsApp. Зелёная таблетка с зелёной тенью.",
+      "html": "<a class=\"ds-btn ds-btn-wa\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.4c-.2.6-1.1 1.1-1.6 1.2-.4 0-.9.1-2.9-.7-2.4-1-4-3.5-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.6-.1 1.2z\"/></svg>Заказать в WhatsApp</a>",
+      "css": ".ds-btn { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border: 0; border-radius: 999px; font-weight: 600; font-size: 17px; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color .2s, color .2s, box-shadow .3s cubic-bezier(.16,1,.3,1), transform .3s cubic-bezier(.16,1,.3,1); } .ds-btn:active { transform: translateY(1px) scale(.99); } .ds-btn:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; } .ds-btn svg { width: 22px; height: 22px; fill: currentColor; } .ds-btn-wa { background: var(--green, #12873c); color: #fff; box-shadow: 0 10px 22px -12px rgba(18,135,60,.9); } .ds-btn-wa:hover { background: var(--green-hover, #0e7433); box-shadow: 0 14px 26px -12px rgba(18,135,60,.95); }"
+    },
+    {
+      "name": "Мягкая кнопка",
+      "kind": "button",
+      "refersTo": "button-soft",
+      "description": "Второстепенное действие на белом: «Собрать список», «Добавить».",
+      "html": "<button class=\"ds-btn ds-btn-soft\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" style=\"fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round\"><path d=\"M12 5v14M5 12h14\"/></svg>Добавить</button>",
+      "css": ".ds-btn { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border: 0; border-radius: 999px; font-weight: 600; font-size: 17px; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color .2s, color .2s, box-shadow .3s cubic-bezier(.16,1,.3,1), transform .3s cubic-bezier(.16,1,.3,1); } .ds-btn:active { transform: translateY(1px) scale(.99); } .ds-btn:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; } .ds-btn svg { width: 22px; height: 22px; fill: currentColor; } .ds-btn-soft { background: var(--surface, #f3f5f1); color: var(--ink, #17201a); } .ds-btn-soft:hover { background: var(--surface-2, #e8ece4); } .ds-btn-soft svg { width: 20px; height: 20px; fill: none; }"
+    },
+    {
+      "name": "Белая кнопка",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "Кнопка на красном финальном блоке и «Построить маршрут». Иконка зелёная.",
+      "html": "<div class=\"ds-on-red\"><a class=\"ds-btn ds-btn-white\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.4c-.2.6-1.1 1.1-1.6 1.2-.4 0-.9.1-2.9-.7-2.4-1-4-3.5-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.6-.1 1.2z\"/></svg>Заказать в WhatsApp</a></div>",
+      "css": ".ds-btn { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border: 0; border-radius: 999px; font-weight: 600; font-size: 17px; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color .2s, color .2s, box-shadow .3s cubic-bezier(.16,1,.3,1), transform .3s cubic-bezier(.16,1,.3,1); } .ds-btn:active { transform: translateY(1px) scale(.99); } .ds-btn:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; } .ds-btn svg { width: 22px; height: 22px; fill: currentColor; } .ds-btn-white { background: #fff; color: var(--ink, #17201a); box-shadow: 0 12px 26px -14px rgba(60,0,0,.55); min-height: 60px; padding: 0 30px; font-size: 18px; } .ds-btn-white:hover { background: #f7faf5; } .ds-btn-white svg { color: var(--green, #12873c); } .ds-on-red { background: var(--red-band, #d6303a); padding: 28px; border-radius: 32px; text-align: center; }"
+    },
+    {
+      "name": "Фильтры разделов",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Переключатели разделов в списке заказа. Активный залит чернилами.",
+      "html": "<div class=\"ds-pills\"><button class=\"ds-pill\" type=\"button\" aria-pressed=\"true\">Все</button><button class=\"ds-pill\" type=\"button\" aria-pressed=\"false\">Молочное</button><button class=\"ds-pill\" type=\"button\" aria-pressed=\"false\">Напитки</button></div>",
+      "css": ".ds-pills { display: flex; flex-wrap: wrap; gap: 8px; } .ds-pill { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; min-height: 42px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--line, #dfe5da); background: #fff; color: var(--ink-2, #4a554c); font-weight: 500; font-size: 15px; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s; } .ds-pill:hover { border-color: #c7d0c1; color: var(--ink, #17201a); } .ds-pill[aria-pressed=\"true\"] { background: var(--ink, #17201a); border-color: var(--ink, #17201a); color: #fff; } .ds-pill:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Чип товара",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Товар, который добавляют в список; выбранный показывает количество.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" style=\"fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round\"><path d=\"M12 5v14M5 12h14\"/></svg>Молоко</button><button class=\"ds-chip is-on\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" style=\"fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round\"><path d=\"M12 5v14M5 12h14\"/></svg>Кефир<span class=\"ds-qty\">2</span></button></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; } .ds-chip { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px 0 12px; border: 1px solid transparent; border-radius: 999px; background: var(--surface, #f3f5f1); color: var(--ink, #17201a); font-size: 15.5px; font-weight: 500; cursor: pointer; transition: background-color .2s, border-color .2s, color .2s; } .ds-chip svg { width: 18px; height: 18px; color: var(--green, #12873c); } .ds-chip:hover { background: var(--surface-2, #e8ece4); } .ds-chip:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; } .ds-chip.is-on { background: var(--green-soft, #e4f3e7); border-color: #b7dcc1; color: var(--green-deep, #0b5c2a); } .ds-qty { display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: var(--green, #12873c); color: #fff; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Поле ввода",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Свой товар, адрес и комментарий.",
+      "html": "<input class=\"ds-field\" placeholder=\"Впишите, что ещё нужно\" aria-label=\"Свой товар\">",
+      "css": ".ds-field { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; width: 100%; min-height: 52px; padding: 0 18px; border: 1.5px solid var(--line, #dfe5da); border-radius: 16px; background: #fff; color: var(--ink, #17201a); font-size: 17px; transition: border-color .2s, box-shadow .2s; } .ds-field::placeholder { color: var(--ink-3, #636c64); } .ds-field:focus { outline: none; border-color: var(--green, #12873c); box-shadow: 0 0 0 4px rgba(18,135,60,.14); }"
+    },
+    {
+      "name": "Шапка",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Липкая белая шапка: знак, название, разделы, кнопка WhatsApp.",
+      "html": "<header class=\"ds-header\"><span class=\"ds-brand\"><svg viewBox=\"0 0 48 48\" width=\"46\" height=\"46\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"24\" r=\"24\" fill=\"#12873c\"/><path d=\"M6.5 16h35a17.5 17.5 0 0 1-35 0z\" fill=\"#9fd68a\"/><path d=\"M8.5 16h31a15.5 15.5 0 0 1-31 0z\" fill=\"#fff\"/><path d=\"M10.5 16h27a13.5 13.5 0 0 1-27 0z\" fill=\"#e8333b\"/><g fill=\"#1b1414\"><ellipse cx=\"17\" cy=\"21.5\" rx=\"1.1\" ry=\"1.7\"/><ellipse cx=\"24\" cy=\"23.5\" rx=\"1.1\" ry=\"1.7\"/><ellipse cx=\"31\" cy=\"21.5\" rx=\"1.1\" ry=\"1.7\"/></g></svg><b>Арбуз</b></span><nav class=\"ds-nav\"><a href=\"#\">Что есть</a><a href=\"#\">Собрать заказ</a><a href=\"#\">Доставка</a></nav><a class=\"ds-btn ds-btn-wa\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.4c-.2.6-1.1 1.1-1.6 1.2-.4 0-.9.1-2.9-.7-2.4-1-4-3.5-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.6-.1 1.2z\"/></svg>Заказать</a></header>",
+      "css": ".ds-btn { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border: 0; border-radius: 999px; font-weight: 600; font-size: 17px; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color .2s, color .2s, box-shadow .3s cubic-bezier(.16,1,.3,1), transform .3s cubic-bezier(.16,1,.3,1); } .ds-btn:active { transform: translateY(1px) scale(.99); } .ds-btn:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; } .ds-btn svg { width: 22px; height: 22px; fill: currentColor; } .ds-btn-wa { background: var(--green, #12873c); color: #fff; box-shadow: 0 10px 22px -12px rgba(18,135,60,.9); } .ds-btn-wa:hover { background: var(--green-hover, #0e7433); box-shadow: 0 14px 26px -12px rgba(18,135,60,.95); } .ds-header { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: flex; align-items: center; gap: 32px; height: 76px; padding: 0 24px; background: #fff; box-shadow: 0 1px 0 var(--line, #dfe5da), 0 10px 24px -20px rgba(23,32,26,.5); } .ds-header .ds-btn-wa { margin-left: auto; } .ds-brand { display: inline-flex; align-items: center; gap: 12px; } .ds-brand b { font-weight: 800; font-size: 27px; letter-spacing: -.035em; color: var(--red-ink, #d12a32); line-height: 1; } .ds-nav { display: flex; gap: 28px; } .ds-nav a { text-decoration: none; font-weight: 500; font-size: 16px; color: var(--ink-2, #4a554c); transition: color .2s; padding: 6px 0; } .ds-nav a:hover { color: var(--green, #12873c); } .ds-nav a:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Плитка каталога",
+      "kind": "card",
+      "refersTo": "tile",
+      "description": "Фото полки во всю плитку, белый ярлык, зелёный «+». Фото увеличивается при наведении. В превью вместо фото тоновая заливка.",
+      "html": "<a class=\"ds-tile\" href=\"#\"><span class=\"ds-tile-ph\"></span><span class=\"ds-tile-label\">Молочное и сыр</span><span class=\"ds-tile-add\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" style=\"fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round\"><path d=\"M12 5v14M5 12h14\"/></svg></span></a>",
+      "css": ".ds-tile { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; position: relative; display: block; width: 260px; height: 214px; overflow: hidden; border-radius: 24px; background: var(--surface, #f3f5f1); color: var(--ink, #17201a); text-decoration: none; isolation: isolate; } .ds-tile-ph { position: absolute; inset: 0; background: linear-gradient(135deg, #e8ece4, #c9d6c2); transition: transform .7s cubic-bezier(.16,1,.3,1); } .ds-tile:hover .ds-tile-ph { transform: scale(1.05); } .ds-tile-label { position: absolute; left: 12px; top: 12px; z-index: 2; padding: 8px 14px; border-radius: 14px; background: #fff; font-weight: 600; font-size: 16px; line-height: 1.25; box-shadow: 0 6px 16px -8px rgba(23,32,26,.30); } .ds-tile-add { position: absolute; right: 12px; bottom: 12px; z-index: 2; width: 46px; height: 46px; border-radius: 50%; background: var(--green, #12873c); color: #fff; display: grid; place-items: center; box-shadow: 0 8px 18px -8px rgba(0,0,0,.45); transition: transform .4s cubic-bezier(.16,1,.3,1), background-color .2s; } .ds-tile-add svg { width: 22px; height: 22px; } .ds-tile:hover .ds-tile-add { transform: scale(1.1); background: var(--green-hover, #0e7433); } .ds-tile:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Наклейка",
+      "kind": "custom",
+      "refersTo": "sticker",
+      "description": "Круглая красная наклейка с кольцами корки, повёрнута на −10°.",
+      "html": "<div class=\"ds-sticker-wrap\"><div class=\"ds-sticker\"><span>Доставка<br>по Джалгану</span></div></div>",
+      "css": ".ds-sticker-wrap { padding: 30px; } .ds-sticker { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; width: 138px; height: 138px; border-radius: 50%; display: grid; place-items: center; text-align: center; background: var(--red-ink, #d12a32); color: #fff; box-shadow: 0 0 0 5px #fff, 0 0 0 11px var(--rind-light, #9fd68a), 0 0 0 17px var(--green-deep, #0b5c2a), 0 22px 30px -12px rgba(0,0,0,.4); transform: rotate(-10deg); transition: transform .5s cubic-bezier(.16,1,.3,1); } .ds-sticker:hover { transform: rotate(-4deg) scale(1.03); } .ds-sticker span { font-weight: 700; font-size: 17px; line-height: 1.12; }"
+    },
+    {
+      "name": "Финальный блок «арбузная мякоть»",
+      "kind": "custom",
+      "refersTo": "melon-band",
+      "description": "Красная полоса с косточками и коркой сверху; текст стоит на сплошной красной подложке.",
+      "html": "<div class=\"ds-melon\"><div class=\"ds-melon-inner\"><h2>Напишите, что нужно, а мы соберём и привезём</h2><a class=\"ds-btn ds-btn-white\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.4c-.2.6-1.1 1.1-1.6 1.2-.4 0-.9.1-2.9-.7-2.4-1-4-3.5-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.6-.1 1.2z\"/></svg>Заказать в WhatsApp</a></div></div>",
+      "css": ".ds-btn { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border: 0; border-radius: 999px; font-weight: 600; font-size: 17px; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background-color .2s, color .2s, box-shadow .3s cubic-bezier(.16,1,.3,1), transform .3s cubic-bezier(.16,1,.3,1); } .ds-btn:active { transform: translateY(1px) scale(.99); } .ds-btn:focus-visible { outline: 3px solid var(--green, #12873c); outline-offset: 3px; } .ds-btn svg { width: 22px; height: 22px; fill: currentColor; } .ds-btn-white { background: #fff; color: var(--ink, #17201a); box-shadow: 0 12px 26px -14px rgba(60,0,0,.55); min-height: 60px; padding: 0 30px; font-size: 18px; } .ds-btn-white:hover { background: #f7faf5; } .ds-btn-white svg { color: var(--green, #12873c); } .ds-melon { font-family: Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif; position: relative; overflow: hidden; text-align: center; color: #fff; padding: 84px 24px 56px; border-radius: 44px; background: linear-gradient(var(--green-deep, #0b5c2a) 0 14px, var(--rind-light, #9fd68a) 14px 22px, #f4fbef 22px 30px, transparent 30px), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='150' viewBox='0 0 180 150'%3E%3Cg fill='%231b1414' fill-opacity='.82'%3E%3Cpath transform='translate(26 34) rotate(-24)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(98 22) rotate(18)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(150 70) rotate(-8)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(62 92) rotate(30)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(124 128) rotate(-30)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3Cpath transform='translate(16 132) rotate(12)' d='M0-7C4-3 4.5 3 0 5-4.5 3-4-3 0-7z'/%3E%3C/g%3E%3C/svg%3E\") 0 30px / 180px 150px, var(--red-band, #d6303a); } .ds-melon-inner { padding: 36px 32px; max-width: 760px; margin: 0 auto; border-radius: 32px; background: var(--red-band, #d6303a); } .ds-melon h2 { margin: 0 0 28px; font-size: clamp(2.1rem, 1.3rem + 3vw, 4rem); line-height: 1.03; font-weight: 700; letter-spacing: -.032em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Арбуз в разрезе",
+    "overview": "Вся система построена на срезе арбуза: белая мякоть у корки, красная сердцевина с чёрными косточками, светлая и тёмная полосы корки. Белый фон и светлые зелёно-серые подложки дают спокойную, чистую страницу уровня ВкусВилл и Купер; красный отвечает за бренд и акценты; зелёный цвет корки отвечает за каждое действие. Характер дают не украшения, а настоящие фото полок магазина и фирменный знак.\n\nПлотность средняя: крупные скругления (от 18 до 44px), щедрые отступы между разделами, плитки и карточки стоят плотно с шагом 14px. Шрифт один, Rubik: заголовки жирные (700) и с плотной трековкой, текст обычный. Иконки линейные, авторские, одной толщины. Тени мягкие, падают вниз и нужны только там, где элемент лежит поверх другого.\n\nОтказ, подтверждённый направлением: никакой иронии, нарочитой «странности» и стоковых картинок. Только свои фото магазина.",
+    "keyCharacteristics": [
+      "Белая страница, подложки с лёгким оттенком корки, тёмно-зелёный почти чёрный текст.",
+      "Красный для бренда, зелёный для действий; эти роли не смешиваются.",
+      "Кнопки, фильтры и чипы в форме таблетки; плитки и карточки с крупным скруглением.",
+      "Настоящие фото полок в плитках каталога.",
+      "Две фирменные детали: круглая наклейка с кольцами корки и финальная полоса «арбузная мякоть» с косточками и коркой сверху."
+    ],
+    "rules": [
+      {
+        "name": "The Корка-действует Rule",
+        "body": "Всё, на что нажимают ради заказа, зелёное. Красный никогда не бывает цветом кнопки действия: он означает бренд и акцент.",
+        "section": "colors"
+      },
+      {
+        "name": "The Белое-на-тёмно-красном Rule",
+        "body": "Белый текст ставится только на red-ink или red-band (5,14:1 и 4,84:1). Ярко-красный red остаётся для графики.",
+        "section": "colors"
+      },
+      {
+        "name": "The Подложка-с-корочкой Rule",
+        "body": "Серые здесь не нейтрально-серые: у всех подложек и чернил зелёный подтон. Чистый серый из системы выпадает.",
+        "section": "colors"
+      },
+      {
+        "name": "The Один-Rubik Rule",
+        "body": "На странице одна гарнитура. Иерархию строят размер и жирность (400 / 500 / 600 / 700 / 800), а не второй шрифт.",
+        "section": "typography"
+      },
+      {
+        "name": "The Без-капса Rule",
+        "body": "Подписи и метки пишутся обычным регистром. Разрядка и капс в системе не используются.",
+        "section": "typography"
+      },
+      {
+        "name": "The Тень-только-сверху Rule",
+        "body": "Тень получает только то, что лежит поверх другого слоя. Карточки на подложке остаются плоскими.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do делать каждое действие заказа зелёной таблеткой (green, 52 или 60px).",
+      "Do ставить в плитки и коллаж только свои фото магазина.",
+      "Do класть белый текст на красное только через red-ink или red-band.",
+      "Do держать нейтральные с зелёным подтоном: surface, surface-2, line, ink.",
+      "Do набирать часы, рейтинг и количества с `tabular-nums`.",
+      "Do рисовать иконки линией 1.8 с круглыми концами, в одном наборе.",
+      "Do брать арбузные детали (кольца корки, косточки, полоса корки) из знака: они и есть материал этого мира."
+    ],
+    "donts": [
+      "Don't делать кнопки действия красными.",
+      "Don't ставить белый текст на ярко-красный red (#e8333b).",
+      "Don't использовать стоковые фото или иллюстрации вместо полок магазина.",
+      "Don't добавлять второй шрифт или подписи капсом с разрядкой.",
+      "Don't давать тень карточкам, которые лежат прямо на подложке."
+    ]
+  }
+}
