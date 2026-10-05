@@ -131,14 +131,14 @@ h1 {
 .fact-ic { width: 44px; height: 44px; border-radius: 50%; background: var(--green-soft); color: var(--green); display: grid; place-items: center; flex: none; }
 .fact-ic.is-star { background: #fff3db; color: var(--star); }
 .fact b { display: block; font-weight: 600; font-size: 17px; line-height: 1.25; font-variant-numeric: tabular-nums; }
-.fact span { display: block; font-size: 14px; color: var(--ink-2); line-height: 1.3; }
+.fact div > span { display: block; font-size: 14px; color: var(--ink-2); line-height: 1.3; }
 .fact-link { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .fact-link:hover b { color: var(--green); }
 
 .collage { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; container-type: inline-size; }
 .ph { position: relative; overflow: hidden; background: var(--surface); }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
-.c-main { grid-column: 1 / -1; aspect-ratio: 16 / 10; border-radius: var(--r-xl); }
+.c-main { grid-column: 1 / -1; aspect-ratio: 16 / 9; border-radius: var(--r-xl); }
 .c-main::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 58%, rgba(0,0,0,.62) 100%); }
 .c-cap { position: absolute; left: 140px; right: 22px; bottom: 18px; z-index: 1; color: #fff; font-size: 15px; font-weight: 500; display: flex; align-items: center; gap: 8px; }
 .c-cap .i { width: 18px; height: 18px; }
@@ -146,7 +146,7 @@ h1 {
 .c-a img { object-position: 50% 30%; }
 .c-b img { object-position: 50% 45%; }
 .sticker {
-  position: absolute; left: -30px; top: 50%; top: calc(62.5cqw - 62px); z-index: 2;
+  position: absolute; left: -30px; top: 50%; top: calc(56.25cqw - 62px); z-index: 2;
   width: 138px; height: 138px; border-radius: 50%;
   display: grid; place-items: center; text-align: center;
   background: var(--red-ink); color: #fff;
@@ -207,7 +207,7 @@ h2 { margin: 0; font-size: clamp(2rem, 1.35rem + 2.3vw, 3.3rem); line-height: 1.
 .order { margin-top: clamp(72px, 9vw, 128px); padding: clamp(64px, 8vw, 112px) 0; background: var(--surface); }
 .order-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(340px, 1fr); gap: 24px; align-items: start; }
 .picker { min-width: 0; background: #fff; border-radius: 28px; padding: clamp(20px, 2.4vw, 32px); }
-.pills { display: flex; gap: 8px; overflow-x: auto; -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent); mask-image: linear-gradient(90deg, #000 90%, transparent); padding: 2px 2px 8px; margin: -2px -2px 6px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; overflow-x: auto; padding: 2px 2px 8px; margin: -2px -2px 6px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
 .pills::-webkit-scrollbar { height: 6px; }
 .pills::-webkit-scrollbar-thumb { background: var(--line); border-radius: 6px; }
 .pill {
@@ -391,11 +391,11 @@ textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-he
   .header .btn .long { display: none; }
   .hero { padding-top: 12px; }
   .c-a, .c-b { display: none; }
-  .c-main { aspect-ratio: 4 / 3; border-radius: var(--r-lg); }
+  .c-main { border-radius: var(--r-lg); }
   .c-cap { left: 18px; right: 132px; }
   .cap-more { display: none; }
-  .sticker { left: auto; right: 14px; top: calc(75cqw - 118px); width: 104px; height: 104px; box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--rind-light), 0 0 0 12px var(--green-deep), 0 16px 24px -10px rgba(0,0,0,.45); }
-  .sticker span { font-size: 13.5px; }
+  .sticker { left: auto; right: 14px; top: calc(56.25cqw - 106px); width: 96px; height: 96px; box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--rind-light), 0 0 0 12px var(--green-deep), 0 16px 24px -10px rgba(0,0,0,.45); }
+  .sticker span { font-size: 12.5px; }
   .cta-row .btn { width: 100%; }
   .facts { margin-top: 30px; padding-top: 22px; gap: 16px; flex-direction: column; }
   .sec-head { grid-template-columns: 1fr; }
@@ -410,6 +410,7 @@ textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-he
   .tile-missing p { display: none; }
   .tile-missing .go { font-size: 14px; }
   .custom { flex-direction: column; }
+  .pills { flex-wrap: nowrap; -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); }
   .terms { grid-template-columns: 1fr; }
   .term, .term + .term { padding: 18px 0; border-left: 0; border-bottom: 1px solid var(--line); }
   .rating-num { font-size: 44px; }
@@ -559,7 +560,7 @@ textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-he
           <svg class="i"><use href="#i-compass"/></svg>
           <div>
             <h3>Канцтовары</h3>
-            <p>«…во всём районе только тут нашли циркуль»<cite>— отзыв покупателя на Яндекс Картах</cite></p>
+            <p>«…во всем районе только тут нашли циркуль»<cite>— отзыв покупателя на Яндекс Картах</cite></p>
           </div>
         </a>
         <a class="tile tile-text tile-missing" href="#zakaz" data-go="custom">
@@ -654,7 +655,7 @@ textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-he
           <figcaption><span class="ava" aria-hidden="true">Н</span><div><b>Не Ахмед</b><span>14 октября 2025 · Яндекс Карты</span></div></figcaption>
         </figure>
         <figure class="rv">
-          <blockquote>Время было позднее, уже в городе все канцтовары были закрыты, и во всём районе только тут нашли циркуль. Сам магазин уютный</blockquote>
+          <blockquote>Время было позднее уже в городе все канцтовары были закрыты и во всем районе только тут нашли циркуль. Сам магазин уютный</blockquote>
           <figcaption><span class="ava" aria-hidden="true">М</span><div><b>418336 Минатуллаев</b><span>13 декабря 2024 · Яндекс Карты</span></div></figcaption>
         </figure>
         <figure class="rv">
@@ -686,7 +687,7 @@ textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-he
           <div class="ph contact-photo"><img src="img/storefront-night-s.jpg" width="800" height="450" alt="Вход в магазин «Арбуз» вечером" loading="lazy"></div>
         </div>
         <div class="map">
-          <iframe src="https://yandex.ru/map-widget/v1/org/arbuz/144025223347/?ll=48.304318%2C42.033283&amp;z=16" title="«Арбуз» на Яндекс Картах: село Джалган, Дагестанская ул., 12" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=48.304316%2C42.033329&amp;z=17&amp;pt=48.304316%2C42.033329%2Cpm2rdl" title="«Арбуз» на Яндекс Картах: село Джалган, Дагестанская ул., 12" loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -739,14 +740,14 @@ textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-he
   /* ============================================= */
 
   var GROUPS = [
-    { id: 'dairy',   short: 'Молочное',        title: 'Молочное и сыр',            img: 'img/dairy-fridge-s.jpg',         items: ['Молоко', 'Кефир', 'Йогурт', 'Творог', 'Сметана', 'Сыр', 'Сливочное масло', 'Сливки'] },
+    { id: 'dairy',   short: 'Молочное',        title: 'Молочное и сыр',            img: 'img/dairy-fridge-s.jpg',         items: ['Молоко', 'Кефир', 'Йогурт', 'Творог', 'Сыр', 'Сливочное масло', 'Сливки'] },
     { id: 'meat',    short: 'Мясо и заморозка', title: 'Курица, колбаса, заморозка', img: 'img/frozen-chicken-s.jpg',       items: ['Курица', 'Колбаса', 'Мороженое'] },
-    { id: 'grocery', short: 'Чай и соусы',     title: 'Чай, кофе и соусы',          img: 'img/tea-coffee-s.jpg',           items: ['Чай', 'Кофе', 'Майонез', 'Кетчуп'] },
+    { id: 'grocery', short: 'Чай и соусы',     title: 'Чай, кофе и соусы',          img: 'img/tea-coffee-s.jpg',           items: ['Чай', 'Кофе', 'Майонез', 'Соусы'] },
     { id: 'sweets',  short: 'Сладкое',         title: 'Сладкое',                    img: 'img/candy-by-weight-s.jpg',      items: ['Конфеты на развес', 'Шоколад', 'Леденцы'] },
-    { id: 'snacks',  short: 'Снеки',           title: 'Снеки',                      img: 'img/chips-aisle-s.jpg',          items: ['Чипсы', 'Сухарики'] },
-    { id: 'drinks',  short: 'Напитки',         title: 'Напитки',                    img: 'img/drinks-pepsi-s.jpg',         items: ['Газировка', 'Энергетики', 'Холодный чай', 'Вода'] },
-    { id: 'home',    short: 'Для дома',        title: 'Для дома',                   img: 'img/household-detergents-s.jpg', items: ['Стиральный порошок', 'Гель для стирки', 'Кондиционер для белья', 'Средство для посуды', 'Туалетная бумага', 'Жидкое мыло', 'Влажные салфетки'] },
-    { id: 'care',    short: 'Уход',            title: 'Уход',                       img: 'img/care-haircolor-s.jpg',       items: ['Зубная паста', 'Зубная щётка', 'Шампунь', 'Дезодорант', 'Краска для волос'] },
+    { id: 'snacks',  short: 'Снеки',           title: 'Снеки',                      img: 'img/chips-aisle-s.jpg',          items: ['Чипсы', 'Снеки'] },
+    { id: 'drinks',  short: 'Напитки',         title: 'Напитки',                    img: 'img/drinks-pepsi-s.jpg',         items: ['Газировка', 'Энергетики', 'Холодный чай'] },
+    { id: 'home',    short: 'Для дома',        title: 'Для дома',                   img: 'img/household-detergents-s.jpg', items: ['Стиральный порошок', 'Гель для стирки', 'Кондиционер для белья', 'Средство для посуды', 'Туалетная бумага', 'Жидкое мыло'] },
+    { id: 'care',    short: 'Уход',            title: 'Уход',                       img: 'img/care-haircolor-s.jpg',       items: ['Зубная паста', 'Зубная щётка', 'Дезодорант', 'Краска для волос'] },
     { id: 'kids',    short: 'Детям',           title: 'Детям и для школы',          img: 'img/toys-s.jpg',                 items: ['Игрушки', 'Канцтовары'] }
   ];
 
@@ -1050,6 +1051,8 @@ textarea.field { padding: 13px 18px; min-height: 76px; resize: vertical; line-he
   }
 
   $('year').textContent = new Date().getFullYear();
+  // On phones show one section at a time so the list and the send button stay close.
+  if (window.matchMedia('(max-width: 760px)').matches) setFilter(GROUPS[0].id);
   render();
 })();
 </script>
